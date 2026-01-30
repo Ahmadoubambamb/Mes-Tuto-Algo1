@@ -6,8 +6,12 @@ int main()
     int N1, N2, tmp, min, max, nb;
       int trouve;
       int sont_frr;
-    printf("donner 2 nbre");
-    scanf("%d%d", &N1, &N2);
+      do{
+    printf("donner un nombre N1 > 0 :");
+    scanf("%d", &N1);
+    printf("donner un nombre N2 > 0 :");
+    scanf("%d", &N2);
+    }while(N1 < 0 || N2 < 0 );
     if(N1<N2)
      { min = N1 ;
        max = N2 ;
@@ -33,6 +37,7 @@ int main()
      }
      if(sont_frr == 1)
         printf("ils sont frere");
-    printf("ils ne sont pas frere");
+     else
+        printf("ils ne sont pas frere");
     return 0;
 }
