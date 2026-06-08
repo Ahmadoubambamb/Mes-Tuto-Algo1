@@ -2,6 +2,7 @@
 
 int main(){
     int i , N , cpt , tmp , s, invers;
+    printf("les nombres tout terrain entre 100 et 1000 sont :\n");
     for(N = 100 ; N < 1000 ; N++){
      cpt = 0 ; // on compte le nombre de diviseurs
      for(i = 1 ; i <= N ; i++)
